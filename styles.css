@@ -481,47 +481,45 @@ nav ul {
 }
 
 /* Recent Posts */
-.recent-posts {
-    padding: 25px 10px 35px;
-}
-
-.recent-posts > div {
+.recent-post .recent-post-container {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 20px;
+    width: 100%;
 }
 
-.post {
+.recent-post .recent-post-card {
     width: 100%;
     box-sizing: border-box;
 }
 
-.recent-posts h2 {
-    text-align: center;
-}
-
 /* Featured Works */
-.featured {
-    padding: 25px 15px;
-}
-
-.featured > h2 {
-    text-align: center;
-}
-
-.work {
+.featured-works .work-container {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    gap: 25px;
 }
 
-.work img {
+.featured-works .work-card {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
     width: 100%;
+    box-sizing: border-box;
+}
+
+.featured-works .work-card > img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
     height: auto;
+    object-fit: cover;
 }
 
-.work-content {
+.featured-works .work-card-details {
     width: 100%;
+    box-sizing: border-box;
+
 }
 
 /* Footer */
